@@ -30,9 +30,12 @@ public class HitEnter : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("TossBall"))
         {
+            if (!isHit)
+            {
+            sm.score = sm.score + scoreAdd;
+            }
             isHit = true;
             collision.transform.position = ballTP.transform.position;
-            sm.score = sm.score + scoreAdd;
             //collision.gameObject.SetActive(false);
         }
     }
