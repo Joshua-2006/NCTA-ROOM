@@ -39,16 +39,16 @@ MonoBehaviour:
   - {fileID: 642795948585949693}
   - {fileID: -1799233928980027552}
   - {fileID: -6878709594026467512}
+  - {fileID: 528305154722739708}
   - {fileID: 5439760288999962925}
   - {fileID: 8479085210537868346}
   - {fileID: -2458523236484053519}
+  - {fileID: 193187225612389227}
+  - {fileID: -1422848566191115424}
   - {fileID: 7734682752666778392}
   - {fileID: 2789618791489711022}
-  - {fileID: -2794321301684209913}
-  - {fileID: -1422848566191115424}
-  - {fileID: 193187225612389227}
   - {fileID: 1607822694774118937}
-  - {fileID: 528305154722739708}
+  - {fileID: -2794321301684209913}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -128,7 +128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5a1f07dc5afe854f9f12a4194aca3fb, type: 3}
   m_Name: WebGL
   m_EditorClassIdentifier: 
-  features: []
+  features:
+  - {fileID: 1040315992774221292}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
@@ -538,11 +539,11 @@ MonoBehaviour:
   m_Name: XrPerformanceSettingsFeature WebGL
   m_EditorClassIdentifier: 
   m_enabled: 0
-  nameUi: 
-  version: 
-  featureIdInternal: 
-  openxrExtensionStrings: 
-  company: 
+  nameUi: XR Performance Settings
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.extension.performance_settings
+  openxrExtensionStrings: XR_EXT_performance_settings
+  company: Unity
   priority: 0
   required: 0
 --- !u!114 &1368143672107996533
@@ -652,12 +653,12 @@ MonoBehaviour:
   - {fileID: 7606010997940612046}
   - {fileID: -4872548249780094318}
   - {fileID: 494167689793281266}
+  - {fileID: -1710833495465247867}
   - {fileID: 8102339331468614498}
   - {fileID: 5231313890185417148}
+  - {fileID: -2453900827093463224}
   - {fileID: -1370448026274795553}
   - {fileID: 5354073219688158261}
-  - {fileID: -1710833495465247867}
-  - {fileID: -2453900827093463224}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:

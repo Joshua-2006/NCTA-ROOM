@@ -12,7 +12,7 @@ public class Gun : MonoBehaviour
 
     private void Start()
     {
-        ammo = 0;
+        ammo = 10;
     }
     private void Update()
     {
@@ -21,7 +21,6 @@ public class Gun : MonoBehaviour
     public void Shoot()
     {
         canShoot = true;
-        ammo = 10;
         if(canShoot && ammo > 0)
         {
             Instantiate(bullet, spawnpoint.transform.position, spawnpoint.transform.rotation);
@@ -31,5 +30,9 @@ public class Gun : MonoBehaviour
     public void DontShoot()
     {
         canShoot = false;
+    }
+    public void Reload()
+    {
+        ammo = 10;
     }
 }
