@@ -22,7 +22,7 @@ public class Gun : MonoBehaviour
     {
         canShoot = true;
         ammo = 10;
-        if(canShoot && ammo < 0)
+        if(canShoot && ammo > 0)
         {
             Instantiate(bullet, spawnpoint.transform.position, spawnpoint.transform.rotation);
             ammo -= 1;
