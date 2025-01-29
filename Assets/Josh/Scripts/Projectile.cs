@@ -7,7 +7,6 @@ public class Projectile : MonoBehaviour
     public Rigidbody rb;
     public float duration;
     public float force;
-    public Targe targe;
 
     private void Start()
     {
@@ -17,7 +16,8 @@ public class Projectile : MonoBehaviour
     }
     private void Update()
     {
-        targe = FindObjectOfType<Targe>();
+        
+        
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -25,7 +25,7 @@ public class Projectile : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Destroy(gameObject);
-            Instantiate(collision.gameObject, SpawnPos(), targe.sp.transform.rotation);
+            Instantiate(collision.gameObject, SpawnPos(), collision.transform.rotation);
         }
     }
     public Vector3 SpawnPos()
