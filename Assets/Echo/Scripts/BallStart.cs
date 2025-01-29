@@ -9,16 +9,21 @@ public class BallStart : MonoBehaviour
     public GameObject ballTP;
     void Start()
     {
-        Instantiate(ballPrefab, ballTP.transform.position, ballTP.transform.rotation);
-        Instantiate(ballPrefab, ballTP.transform.position, ballTP.transform.rotation);
-        Instantiate(ballPrefab, ballTP.transform.position, ballTP.transform.rotation);
-        Instantiate(ballPrefab, ballTP.transform.position, ballTP.transform.rotation);
-        Instantiate(ballPrefab, ballTP.transform.position, ballTP.transform.rotation);
+        startSpawn();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void startSpawn()
+    {
+        Instantiate(ballPrefab, ballTP.transform.position, ballTP.transform.rotation);
+        Instantiate(ballPrefab, ballTP.transform.position, ballTP.transform.rotation);
+        Instantiate(ballPrefab, ballTP.transform.position, ballTP.transform.rotation);
+        Instantiate(ballPrefab, ballTP.transform.position, ballTP.transform.rotation);
+        Instantiate(ballPrefab, ballTP.transform.position, ballTP.transform.rotation);
     }
 }

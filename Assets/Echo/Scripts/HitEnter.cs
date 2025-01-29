@@ -7,6 +7,7 @@ public class HitEnter : MonoBehaviour
     public int scoreAdd;
     public bool isHit;
     public MeshRenderer mr;
+    public Material green;
     public Material red;
     public GameObject ballTP;
     public ScoreManager sm;
@@ -20,6 +21,11 @@ public class HitEnter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isHit)
+        {
+            mr.material = green;
+        }
+
         if (isHit)
         {
             mr.material = red;
@@ -35,7 +41,9 @@ public class HitEnter : MonoBehaviour
             sm.score = sm.score + scoreAdd;
             }
             isHit = true;
-            collision.transform.position = ballTP.transform.position;
+            //collision.transform.position = ballTP.transform.position;
+            Destroy(collision.gameObject);
+            sm.ballsLeft = sm.ballsLeft - 1;
             //collision.gameObject.SetActive(false);
         }
     }
