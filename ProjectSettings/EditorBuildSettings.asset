@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/BallToss.unity
+    guid: c8a9b70bcb721c84d8e10cb218c383c3
+  - enabled: 0
     path: Assets/Scenes/PasimiosRoom.unity
     guid: b7536e72ead29a347ad94ecb53ec807d
   m_configObjects:
