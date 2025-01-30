@@ -11,6 +11,7 @@ public class HitEnter : MonoBehaviour
     public Material red;
     public GameObject ballTP;
     public ScoreManager sm;
+    public ParticleSystem pm;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +40,7 @@ public class HitEnter : MonoBehaviour
             if (!isHit)
             {
             sm.score = sm.score + scoreAdd;
+                pm.Play();
             }
             isHit = true;
             //collision.transform.position = ballTP.transform.position;

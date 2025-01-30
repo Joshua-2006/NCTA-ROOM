@@ -6,7 +6,7 @@ using TMPro;
 public class ScoreManager : MonoBehaviour
 {
     public int score = 0;
-    public int ballsLeft = 5;
+    public int ballsLeft = 0;
     public TextMeshProUGUI scoreDisplay;
     public TextMeshProUGUI ballDisplay;
     public GameObject door;
