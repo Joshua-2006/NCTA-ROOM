@@ -53,7 +53,7 @@ public class Buttons : MonoBehaviour
     }
     public Vector3 SpawnPos()
     {
-        float xRange = Random.Range(-2, 1);
+        float xRange = Random.Range(-2.9f, -5.5f);
         float yRange = Random.Range(1, 2);
         float zRange = Random.Range(8, 12);
         Vector3 randomPos = new Vector3(xRange, yRange, zRange);

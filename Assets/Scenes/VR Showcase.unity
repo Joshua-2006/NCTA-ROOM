@@ -54093,7 +54093,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8006001968105125244}
-  - component: {fileID: 8006001968105125247}
   m_Layer: 0
   m_Name: Sttach
   m_TagString: Untagged
@@ -54101,19 +54100,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &8006001968105125247
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8006001968105125245}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.022165952
-  m_Center: {x: 0.0066883415, y: 0.0065667955, z: 0.008426586}
 --- !u!114 &8007297685124711075
 MonoBehaviour:
   m_ObjectHideFlags: 0
