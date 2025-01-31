@@ -9,18 +9,30 @@ public class Gun : MonoBehaviour
     public GameObject spawnpoint;
     public bool canShoot;
     public int ammo;
+    public Timer time;
 
     private void Start()
     {
-        ammo = 10;
+        
     }
     private void Update()
     {
+        time = FindAnyObjectByType<Timer>();
+        if(time.isRunning)
+        {
+            ammo = 10;
+        }
+        if(time!.isRunning)
+        {
+            ammo = 0;
+        }
+
     }
 
     public void Shoot()
     {
-        canShoot = true;
+        if (canShoot == true)
+        ammo = 10;
         if(canShoot && ammo > 0)
         {
             Instantiate(bullet, spawnpoint.transform.position, spawnpoint.transform.rotation);
