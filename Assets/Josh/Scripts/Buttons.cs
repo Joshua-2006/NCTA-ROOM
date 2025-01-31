@@ -18,7 +18,17 @@ public class Buttons : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        FindObjectsOfType<Targe>();
+        
+        if(time.time == 0)
+        {
+            Destroy(targe);
+            foreach (GameObject target in Targes)
+                {
+                    Destroy(target);
+                }
+            Targes.Clear();
+        }
     }
     public void Button()
     {
@@ -43,9 +53,10 @@ public class Buttons : MonoBehaviour
     }
     public Vector3 SpawnPos()
     {
-        float xRange = Random.Range(-3, 3.6f);
-        float yRange = Random.Range(1, 3);
-        Vector3 randomPos = new Vector3(xRange, yRange, 8);
+        float xRange = Random.Range(-2, 1);
+        float yRange = Random.Range(1, 2);
+        float zRange = Random.Range(8, 12);
+        Vector3 randomPos = new Vector3(xRange, yRange, zRange);
         return randomPos;
     }
 }

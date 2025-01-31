@@ -9,6 +9,7 @@ public class Timer : MonoBehaviour
     public int time;
     public bool isRunning;
     public TextMeshProUGUI clockDisplay;
+    public Buttons buttons;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +18,7 @@ public class Timer : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-
+    { 
     }
     IEnumerator Countdown()
     {
